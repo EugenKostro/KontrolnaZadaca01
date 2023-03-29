@@ -50,12 +50,12 @@ function okrenutiString(string){
     let tempString = "";
     let counter = 0;
     for(let i = 0; i < string.length; i++){
-        string[i]
+        
         counter++;
     }
-    return counter;
+    console.log(string,",", counter);
 }
-console.log(okrenutiString("Alo o"));
+okrenutiString("Alo o");
 console.log("------------")
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
