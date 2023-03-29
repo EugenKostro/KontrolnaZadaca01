@@ -48,12 +48,13 @@ console.log("----------------")
 
 function okrenutiString(string){
     let tempString = "";
-    for(let i = 0; i < tempString.length; i--){
-        tempString[i] - 1;
+    let counter = 0;
+    for(let i = 0; i < string.length; i++){
+        counter++;
     }
-    return tempString;
+    return counter;
 }
-
+console.log(okrenutiString("Bok"));
 console.log("------------")
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
@@ -65,14 +66,8 @@ const somePeople = {
     Martin: "Fowler",
     Erich: "Gamma",
 
-    najkraciKljuc: function(prop){
-        if(prop.length < prop.length){
-            console.log(prop);
-        }
-        else if(prop.length > prop.length){
-            console.log(prop);
-        }
-        else{ console.log(prop, prop); }
+    najkraciKljuc: function(){
+        
     }
 }
 somePeople.najkraciKljuc();
