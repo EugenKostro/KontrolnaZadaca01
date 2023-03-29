@@ -3,21 +3,58 @@
 function brojevi(){
     for(let i = 1; i <101; i++){
         if(i % 2 == 0){
-            console.log(i)
+            console.log(i);
         }
     }
 }
+brojevi();
 
 //2 (3 BODA)
 //Napisi funkciju koja koristi switch selekciju za pretvaranje numerickog unosa u dan u tjednu. Za neispravan unos ispisi prikladnu poruku.
 //INPUT: 1; OUTPUT: "Ponedjeljak";
 //INPUT: 5; OUTPUT: "Petak"; 
-
+console.log("---------------")
+function brojDana(broj){
+    switch (broj) {
+        case 1:
+            console.log("Ponedeljak");
+            break;
+        case 2:
+            console.log("Utorak");
+            break;
+        case 3:
+            console.log("Srijeda");
+            break;
+        case 4:
+            console.log("Četvrtak");
+            break;
+        case 5:
+            console.log("Petak");
+            break;
+        case 6:
+            console.log("Subota");
+            break;
+        case 7:
+            console.log("Nedelja");
+            break;
+    }
+}
+brojDana(3);
+console.log("----------------")
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
 //INPUT: "Pisanje zadataka nije jednostavan posao";
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 35)
 
+function okrenutiString(string){
+    let tempString = "";
+    for(let i = 0; i < tempString.length; i--){
+        tempString[i] - 1;
+    }
+    return tempString;
+}
+
+console.log("------------")
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
 const somePeople = {
@@ -30,6 +67,8 @@ const somePeople = {
 }
 //INPUT: somePeople
 //OUTPUT: "Ada"
+
+
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
