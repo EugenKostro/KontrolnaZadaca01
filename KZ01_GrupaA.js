@@ -50,8 +50,7 @@ function okrenutiString(string){
     let tempString = "";
     let counter = 0;
     for(let i = 0; i < string.length; i++){
-        string = tempString;
-        tempString.split(" ");
+        string[i]
         counter++;
     }
     return counter;
