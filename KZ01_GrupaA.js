@@ -63,8 +63,19 @@ const somePeople = {
     Ada: "Lovelace",
     Kent: "Beck",
     Martin: "Fowler",
-    Erich: "Gamma"
+    Erich: "Gamma",
+
+    najkraciKljuc: function(prop){
+        if(prop.length < prop.length){
+            console.log(prop);
+        }
+        else if(prop.length > prop.length){
+            console.log(prop);
+        }
+        else{ console.log(prop, prop); }
+    }
 }
+somePeople.najkraciKljuc();
 //INPUT: somePeople
 //OUTPUT: "Ada"
 
